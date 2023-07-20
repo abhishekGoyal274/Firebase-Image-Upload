@@ -7,7 +7,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const multer = require("multer");
 
-const serviceAccount = require("./pwa-course-79727.json");
+const serviceAccount = require("/etc/secrets/pwa-course-79727.json");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL:
